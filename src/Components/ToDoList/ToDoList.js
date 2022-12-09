@@ -4,7 +4,7 @@ import "./ToDoList.css";
 const ToDoList = () => {
   return (
     <div>
-      <ul>
+      <ul className="list">
         <li>1</li>
         <li>2</li>
         <li>3</li>
