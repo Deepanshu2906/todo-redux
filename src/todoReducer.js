@@ -22,14 +22,14 @@ export const todoSlice = createSlice({
     },
     update: (state, action) => {
       console.log(action.payload);
-      state.value.push(action.payload);
+      state.value[action.payload.index] = action.payload.text;
     },
   },
   // Will handle the action type `'todo/increment'`
 });
 
 export const todoSelector = (state) => state.todo.value;
-export const { add } = todoSlice.actions;
+export const { add, update } = todoSlice.actions;
 
 export default todoSlice.reducer; //   store looking for reducer whicomes from slicer
 

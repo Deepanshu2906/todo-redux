@@ -6,3 +6,10 @@ ul {
 .list{
     margin: 30px;
 }
+.btn-warning {
+    background-color: #ffc107 !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+}
