@@ -8,7 +8,7 @@ function ToDoForm() {
 
   return (
     <div>
-      <form>
+      <div>
         <input
           value={value}
           onInput={(e) => {
@@ -26,7 +26,7 @@ function ToDoForm() {
         >
           Add
         </button>
-      </form>
+      </div>
     </div>
   );
 }

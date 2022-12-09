@@ -1,13 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { todoSelector } from "../../todoReducer";
 
 import "./ToDoList.css";
 const ToDoList = () => {
+  const value = useSelector(todoSelector);
   return (
     <div>
       <ul className="list">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        {value.map((i) => (
+          <li> {i}</li>
+        ))}
       </ul>
     </div>
   );
